@@ -1,0 +1,7 @@
+title Single Page App New Note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over server:
+server responds with status code 201 created
+it knows from JS code that form data is JSON
+end note

@@ -1,0 +1,15 @@
+title Single Page App Version of 'Notes'
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser:HTML-code
+note over browser:
+contents of HTML page are manipulated 
+with JS that executes in the browser
+and fetches the following with GET:
+end note
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: data.json [{"content":"hey","date":"2021-03-19T01:10:06.827Z"}...]
